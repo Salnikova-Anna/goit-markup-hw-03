@@ -14,12 +14,54 @@
   --active-link-color: #404bbf;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
 .list {
   list-style: none;
 }
 
 .link {
   text-decoration: none;
+}
+
+.container {
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  border: 2px solid red;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 body {
@@ -50,6 +92,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+
+.section-top-bottom-padding {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-bottom-padding {
+  padding-bottom: 120px;
 }
 
 /* LOGOTYPE */
@@ -108,9 +159,17 @@ body {
   color: var(--active-link-color);
 }
 
+.header-section {
+  padding: 24px 0;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #e7e9fc;
+}
+
 /* HERO */
 .hero {
   background-color: var(--secondary-background-color);
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -119,6 +178,8 @@ body {
   text-align: center;
   letter-spacing: 0.02em;
   color: var(--hero-title-color);
+  width: 496px;
+  margin: 0 auto 48px;
 }
 .hero-button {
   font-family: "Roboto", sans-serif;
@@ -132,11 +193,22 @@ body {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
+  width: 169px;
+  height: 56px;
+  margin-top: 48px;
+  display: block;
+  margin: 0 auto;
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background: var(--active-link-color);
+}
+
+/* ACTIVITY */
+
+.activity-chapter-margin {
+  margin-bottom: 72px;
 }
 
 /* OUR TEAM */
@@ -150,6 +222,10 @@ body {
 
 .team-item {
   background-color: var(--primary-background-color);
+}
+
+.team-chapter-margin {
+  margin-bottom: 69px;
 }
 
 /* PORTFOLIO */
@@ -181,9 +257,20 @@ body {
   border: 1px solid #e7e9fc;
 }
 
+.menu-button-list {
+  margin-bottom: 72px;
+}
+
+.potrfolio-menu-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
 /* FOOTER */
 .page-end {
   background-color: var(--secondary-background-color);
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .page-end-text {
@@ -191,4 +278,6 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--tretiary-color);
+  width: 264px;
+  margin-top: 16px;
 }
