@@ -74,7 +74,7 @@ body {
   background-color: var(--primary-background-color);
 }
 
-/* COMPONENTS */
+/* ====================COMPONENTS==================== */
 
 .chapter-title {
   font-size: 36px;
@@ -98,8 +98,7 @@ body {
   color: var(--secondary-color);
 }
 
-.section-top-bottom-padding {
-  padding-top: 120px;
+.section {
   padding-bottom: 120px;
 }
 
@@ -107,7 +106,7 @@ body {
   padding-bottom: 120px;
 }
 
-/* LOGOTYPE */
+/* ====================LOGOTYPE==================== */
 
 .logotype {
   font-family: "Raleway", sans-serif;
@@ -128,7 +127,20 @@ body {
   color: var(--logo-studio-down-color);
 }
 
-/* HEADER */
+/* ====================HEADER==================== */
+.header-box {
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  gap: 76px;
+}
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
+}
 
 .navigation-link {
   font-weight: 500;
@@ -149,6 +161,12 @@ body {
 
 .address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  gap: 40px;
 }
 
 .address-link {
@@ -170,7 +188,7 @@ body {
   border-bottom-color: #e7e9fc;
 }
 
-/* HERO */
+/* ====================HERO==================== */
 .hero {
   background-color: var(--secondary-background-color);
   padding: 188px 0;
@@ -209,7 +227,11 @@ body {
   background: var(--active-link-color);
 }
 
-/* VALUES */
+/* ====================VALUES==================== */
+
+.values {
+  padding-top: 120px;
+}
 
 .values-list {
   display: flex;
@@ -239,10 +261,11 @@ body {
   margin-left: var(--item-gap);
 }
 
-/* OUR TEAM */
+/* ====================OUR TEAM==================== */
 
 .team {
   background-color: var(--tretiary-background-color);
+  padding-top: 120px;
 }
 
 .box-team {
@@ -276,16 +299,30 @@ body {
   margin-left: var(--item-gap);
 }
 
-/* PORTFOLIO */
+/* ====================PORTFOLIO==================== */
 
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  flex-basis: calc(100% / 3 - 24px);
+  margin-top: -48px;
+  margin-left: -24px;
 }
 
 .portfolio-menu-item {
+  flex-basis: calc(100% / 3 - 24px);
+  margin-top: 48px;
+  margin-left: 24px;
   border: 1px solid #e7e9fc;
+}
+
+.portfolio-menu-subtitle {
+  margin-bottom: var(--head-paragraph-gap);
+}
+
+.portfolio-text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .menu-button {
@@ -315,14 +352,15 @@ body {
 .menu-button-list {
   margin-bottom: 72px;
   display: flex;
+  justify-content: center;
+  gap: 24px;
 }
 
 .potrfolio-menu-section {
   padding-top: 96px;
-  padding-bottom: 120px;
 }
 
-/* FOOTER */
+/* ====================FOOTER==================== */
 .page-end {
   background-color: var(--secondary-background-color);
   padding-top: 100px;
