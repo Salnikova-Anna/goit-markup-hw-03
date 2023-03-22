@@ -12,6 +12,8 @@
   --primary-botton-color: #ffffff;
   --secondary-botton-color: #4d5ae5;
   --active-link-color: #404bbf;
+  --item-gap: 24px;
+  --head-paragraph-gap: 8px;
 }
 
 h1,
@@ -33,6 +35,8 @@ ul {
 
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .list {
@@ -48,7 +52,7 @@ img {
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
-  border: 2px solid red;
+  /* border: 2px solid red; */
 }
 
 .visually-hidden {
@@ -205,10 +209,34 @@ body {
   background: var(--active-link-color);
 }
 
+/* VALUES */
+
+.values-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--item-gap));
+}
+
+.values-list > .values-item {
+  flex-basis: calc(100% / 4 - var(--item-gap));
+  margin-left: var(--item-gap);
+}
+
 /* ACTIVITY */
 
 .activity-chapter-margin {
   margin-bottom: 72px;
+}
+
+.activity-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--item-gap));
+}
+
+.activity-item {
+  flex-basis: calc(100% / 3 - var(--item-gap));
+  margin-left: var(--item-gap);
 }
 
 /* OUR TEAM */
@@ -216,19 +244,50 @@ body {
 .team {
   background-color: var(--tretiary-background-color);
 }
-.team-align {
+
+.box-team {
   text-align: center;
+  padding: 32px 16px;
+}
+
+.team-subtitle {
+  margin-bottom: var(--head-paragraph-gap);
 }
 
 .team-item {
   background-color: var(--primary-background-color);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .team-chapter-margin {
   margin-bottom: 69px;
 }
 
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: calc(-1 * var(--item-gap));
+}
+
+.team-item {
+  flex-basis: calc(100% / 4 - var(--item-gap));
+  margin-left: var(--item-gap);
+}
+
 /* PORTFOLIO */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  flex-basis: calc(100% / 3 - 24px);
+}
+
+.portfolio-menu-item {
+  border: 1px solid #e7e9fc;
+}
+
 .menu-button {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -253,12 +312,9 @@ body {
   border-radius: 4px;
 }
 
-.portfolio-menu-item {
-  border: 1px solid #e7e9fc;
-}
-
 .menu-button-list {
   margin-bottom: 72px;
+  display: flex;
 }
 
 .potrfolio-menu-section {
